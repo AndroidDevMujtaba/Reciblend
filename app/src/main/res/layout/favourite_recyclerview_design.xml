@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_imageView"
+        android:layout_width="320dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/iv_recipeImage_fav"
+            android:layout_width="320dp"
+            android:layout_height="215dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/biryani" />
+
+        <ImageView
+            android:id="@+id/iv_bookmarkImage_fav"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="278dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/filled_bookmark"
+            android:background="@drawable/edit_text"/>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv_recipeName_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="Chicken Hawaiian"
+        android:textColor="@color/text_clr"
+        android:layout_marginTop="-6dp"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsmedium"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-4dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_star_fav"
+            android:layout_width="16dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/star"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/rating_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginTop="2dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="4.5 ratings"
+            android:gravity="center_vertical"
+            android:textColor="@color/black">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
